@@ -1,0 +1,225 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    user-select: none;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 30rem;
+}
+.vmore{
+    box-shadow: 2px 2px 4px rgb(194, 193, 193), inset 2px 2px 4px rgba(77, 77, 77, 0.27), inset -2px -2px 4px rgba(66, 66, 66, 0.284);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 204, 255);
+    z-index: 20;
+    padding:6px 10px;
+    border-radius: 5px;
+    bottom:5px;
+    right: 20px;
+    position: fixed;
+}
+.vid {
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.558);
+    width: 100%;
+    height: 100%;
+}
+
+.vm {
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    width: 80%;
+}
+
+video {
+    border-radius: 10px;
+    outline: none;
+    width: 90%;
+
+}
+
+.cls {
+margin:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.text {
+    text-align: center;
+    height: 10vh;
+}
+
+.clr {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: .1% .1%;
+}
+
+.clr>div {
+    cursor: no-drop;
+    margin: 15px 0 0 0;
+    border-radius: 10px;
+    width: 90%;
+    aspect-ratio: 1/1;
+    box-shadow: 5px 5px 10px rgb(194, 193, 193), inset -5px -5px 10px rgba(0, 0, 0, 0.2), inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.clr>.up {
+    z-index: 10;
+    cursor: auto;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    overflow: hidden;
+    border: .1px solid grey;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 300px;
+    aspect-ratio: 1/.75;
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 10px 10px 30px rgb(144, 144, 144);
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: rgb(0, 231, 0)
+}
+
+.blue {
+    background-color: rgb(0, 200, 255)
+}
+
+.yellow {
+    background-color: rgb(255, 230, 0)
+}
+
+.pp>p {
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+}
+
+.lbl {
+    margin: 5% 0 5% 0;
+}
+
+.btn {
+    height: 40%;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn>p {
+    cursor: pointer;
+    letter-spacing: .5px;
+    font-size: 15px;
+    font-family: Verdana;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    aspect-ratio: 2/.8;
+    color: rgb(0, 148, 0);
+    background-color: rgb(0, 246, 164);
+    box-shadow: 2px 2px 4px rgb(194, 193, 193), inset 2px 2px 4px rgba(77, 77, 77, 0.167), inset -2px -2px 4px rgba(66, 66, 66, 0.246);
+}
+
+.ok {
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    aspect-ratio: 3/1;
+    margin: 30px 0 40px 0;
+    border-radius: 5px;
+    background-color: rgb(155, 155, 155);
+    box-shadow: 2px 2px 4px rgb(194, 193, 193), inset 2px 2px 4px rgba(77, 77, 77, 0.5), inset -2px -2px 4px rgba(66, 66, 66, 0.549);
+}
+
+.scr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 0%;
+    width: 100%;
+}
+
+.hs,
+.scr>p {
+    padding-left: 3%;
+    border: .1px solid rgb(255, 232, 232);
+    margin: 0%;
+    margin-bottom: 3px;
+    line-height: 30px;
+    width: 97%;
+    color: rgb(149, 149, 149);
+    background-color: rgb(252, 252, 252);
+}
+
+.hs {
+    color: red;
+    display: none;
+    line-height: 45px;
+    margin: 0 0 10px 0;
+
+}
